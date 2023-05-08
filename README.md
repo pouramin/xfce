@@ -35,7 +35,7 @@ https://dashboard.azaronline.com/order/?aff=790&p=vps
 
 ```
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get autoremove -y 
-```
+``` 
 
 ###### Import xfce : نصب و ایمپورت شبیه ساز
 
