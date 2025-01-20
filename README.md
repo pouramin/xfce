@@ -138,7 +138,27 @@ sudo dpkg -i ---
 
 sudo apt install -f
 ```
+>[!TIP]
+>#### جدیدا برای نصب VNC یه سری ارور حین نصب دریافت میشه، دومورد مهمشو اینجا براتون توضیح میدم بهمراه راه حلش.
 
+#### Problem 1: Couldn't start Xtightvnc process.
+##### Solution: check your hostname, and /etc/hosts to ensure both are the same. To edit those files, use the commands.
+```
+nano /etc/hostname
+nano /etc/hosts
+hostname
+```
+
+#### Problem 2: Couldn't start Xtightvnc; trying default font path, Please set correct fontPath in the vncserver script, Couldn't start Xtightvnc process.
+##### Solution: The x11 fonts are missing, I don't know why the dependency packages are not installed. Try to find the folder
+```
+ls /usr/share/fonts/X11/
+```
+
+##### if it is not found, then try to install xfonts base
+```
+apt-get install  xfonts-base
+```
 
 
 
